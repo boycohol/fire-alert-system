@@ -1,0 +1,69 @@
+<%- include("include")%>
+    <!-- Navba9r -->
+    <%- include ("header")%>
+        <!-- End Navbar -->
+
+        <div class="content">
+
+            <%-include("navbar")%>
+
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>Thiết bị</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                        <tr>
+                            <td>Đèn</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" style="width: 3.5em; height: 1.5em;" type="checkbox"
+                                        checked onclick="switchbtn(checked, 'led')">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Máy bơm</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" style="width: 3.5em; height: 1.5em;" type="checkbox"
+                                        checked onclick="switchbtn(checked, 'pump')">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Quạt</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" style="width: 3.5em; height: 1.5em;" type="checkbox"
+                                        checked onclick="switchbtn(checked, 'fan')">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Loa Buzzer</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" style="width: 3.5em; height: 1.5em;" type="checkbox"
+                                        checked onclick="switchbtn(checked, 'buzzer')">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+        </div>
+
+
+        <!-- Modal Cấp quyền admin-->
+        <%-include("authorityManager")%>
+            <!-- END Modal Cấp quyền admin-->
+
+            <!-- Modal add địa điểm-->
+            <%-include("addLocation")%>
+                <!-- END Modal add địa điểm-->
+
+                <!-- Start Footer -->
+                <%- include("footer")%>
+                    <!-- End Footer -->
+                    <%- include("end")%>

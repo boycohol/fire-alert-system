@@ -1,0 +1,45 @@
+body{
+    background-color: #E1E8F5;
+}
+.content{
+    margin: 20px;
+}
+.add{
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.deletedd{
+    margin-top: 4px;
+}
+.Name{
+    margin-top: 20px;
+}
+.location{
+    display: flex;
+    margin-top: 20px;
+}
+#location{
+    width: 378px;
+    height: 43px;
+    left: 59px;
+    top: 154px;
+}
+.listchiso{
+    display: flex;
+    margin-top: 20px;
+}
+.chiso{
+    display: flex;
+    margin-right: 15px;
+}
+.table{
+  margin-top: 20px;
+}
+table{width: 90%;}
+table, th, td {
+  border:1px solid black;
+  
+}
+.bieudo{
+    margin-top: 20px;
+}

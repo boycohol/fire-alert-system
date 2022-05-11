@@ -1,0 +1,40 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form action="/user/update-auth" method="POST" class="auth_update">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cấp quyền tài khoản</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example1cg">Tài khoản</label>
+                        <input type="text" id="form3Example1cg" name="account"
+                            class="form-control form-control-lg input_account" />
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input user_authority" type="radio" name="exampleRadios"
+                            id="exampleRadios1" value="Admin" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Quyền admin
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input user_authority" type="radio" name="exampleRadios"
+                            id="exampleRadios2" value="User">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Người dùng
+                        </label>
+                    </div>
+                    <div class="auth-msg text-danger mt-3">
+                    </div>
+                    <div class="auth-success text-success mt-3"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

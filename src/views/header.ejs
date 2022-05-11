@@ -1,0 +1,63 @@
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark">
+  <img src="/img/logo.png" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">
+          <i class="fa fa-home"></i>
+          Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <!-- <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-envelope-o">
+                  <span class="badge badge-danger">11</span>
+                </i>
+                Link
+              </a>
+            </li> -->
+      <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#">
+                <i class="fa fa-envelope-o">
+                  <span class="badge badge-warning">11</span>
+                </i>
+                Disabled
+              </a>
+            </li> -->
+      <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-envelope-o">
+                  <span class="badge badge-primary">11</span>
+                </i>
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+    </ul>
+    <ul>
+      <div class="Name" style="color: #EFE955; margin-right: 380px; margin-top: 20px;">
+        <h1>Hệ thống báo cháy</h1>
+      </div>
+    </ul>
+
+
+    <form class="form-inline my-2 my-lg-0 user_manager">
+      <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
+      <div class="user_info me-3 text-light"><%=userData.Name%></div>
+      <a href="<%=headerHref%>" type="button" class="btn btn-outline-primary my-2 my-sm-0 button_login">
+        <%=headerBtn%>
+      </a>
+    </form>
+  </div>
+</nav>

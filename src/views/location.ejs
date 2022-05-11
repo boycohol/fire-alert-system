@@ -1,0 +1,56 @@
+<%- include("include")%>
+    <%- include ("header")%>
+        <div class="content">
+            <%-include("navbar")%>
+                <div class="location">
+                    <div class="diadiem">
+                        <select id="location">
+                            <option value="" selected disabled hidden>Chọn địa điểm</option>
+                            <% for(let i=0;i< data_location.length;i++ ) {%>
+                                <option value="<%=data_location[i].Location%>">
+                                    <%=data_location[i].Location%>
+                                </option>
+                                <% } %>
+                        </select>
+                    </div>
+                    <div class="add"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#addModal">Thêm địa điểm</button></div>
+                </div>
+                <div class="table">
+                    <table id="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Thiết bị</th>
+                                <th>User</th>
+                                <th>Địa điểm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(let i=0;i< all_location.length;i++ ) {%>
+                                <tr>
+                                    <td>
+                                        <%= all_location[i].Name%>
+                                    </td>
+                                    <td>
+                                        <%= all_location[i].User%>
+                                    </td>
+                                    <td>
+                                        <%= all_location[i].Location%>
+                                    </td>
+                                </tr>
+                                <% } %>
+                        </tbody>
+
+                    </table>
+                </div>
+        </div>
+        <!-- Modal Cấp quyền admin-->
+        <%-include("authorityManager")%>
+            <!-- END Modal Cấp quyền admin-->
+
+            <!-- Modal add địa điểm-->
+            <%-include("addLocation")%>
+                <!-- END Modal add địa điểm-->
+                <%- include("footer")%>
+                    <!-- End Footer -->
+                    <%- include("end")%>

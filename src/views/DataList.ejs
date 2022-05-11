@@ -1,0 +1,33 @@
+<%- include("include")%>
+    <%- include ("header")%>
+        <!-- End Navbar -->
+        <div class="content">
+
+            <%-include("navbar")%>
+
+                <div class="table">
+                    <div id="name" style="color: red; font-weight: bold !important;">Bảng đo nhiệt độ (độ C)</div>
+                    <div id="container1" style="height: 500px; width: 100%"></div>
+                </div>
+
+                <div class="table">
+                    <div id="name" style="color: red; font-weight: bold !important;">Bảng đo nồng độ khí Gas (ppm)</div>
+                    <div id="container2" style="height: 500px; width: 100%"></div>
+                </div>
+
+        </div>
+
+        <!-- Modal Cấp quyền admin-->
+        <%-include("authorityManager")%>
+            <!-- END Modal Cấp quyền admin-->
+
+            <!-- Modal add địa điểm-->
+            <%-include("addLocation")%>
+                <!-- END Modal add địa điểm-->
+
+
+                <!-- Start Footer -->
+
+                <%- include("footer")%>
+                    <!-- End Footer -->
+                    <%- include("end")%>

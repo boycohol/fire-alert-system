@@ -1,0 +1,45 @@
+<%- include("include")%>
+    <!-- Navba9r -->
+    <%- include ("header")%>
+
+
+        <!-- End Navbar -->
+        <div class="content">
+            <%-include("navbar")%>
+
+                <div class="table">
+                    <div id="name" style="color: red; font-weight: bold !important;">Bảng sự cố nhiệt độ</div>
+                    <table id="incidentTableTemp">
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>Sự cố</th>
+                            <th>Thiết bị đã kích hoạt</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="table">
+                    <div id="name" style="color: red; font-weight: bold !important;">Bảng sự cố khí gas</div>
+                    <table id="incidentTableGas">
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>Sự cố</th>
+                            <th>Thiết bị đã kích hoạt</th>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+
+        <!-- Modal Cấp quyền admin-->
+        <%-include("authorityManager")%>
+            <!-- END Modal Cấp quyền admin-->
+
+            <!-- Modal add địa điểm-->
+            <%-include("addLocation")%>
+                <!-- END Modal add địa điểm-->
+
+
+                <!-- Start Footer -->
+                <%- include("footer")%>
+                    <!-- End Footer -->
+                    <%- include("end")%>

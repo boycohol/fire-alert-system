@@ -1,0 +1,55 @@
+<%- include("include")%>
+    <!-- Navba9r -->
+    <%- include ("header")%>
+        <!-- End Navbar -->
+
+        <div class="content">
+
+            <%-include("navbar")%>
+
+                <div class="table">
+                    <table id="admin-table">
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>ID</th>
+                            <th>Thiết bị</th>
+                            <th>Trạng thái</th>
+                            <th>User</th>
+                        </tr>
+                        <% for(let i=0;i< dataHisDevice.length;i++ ) {%>
+                            <tr>
+                                <td>
+                                    <%= dataHisDevice[i].Time%>
+                                </td>
+                                <td>
+                                    <%= dataHisDevice[i].ID%>
+                                </td>
+                                <td>
+                                    <%= dataHisDevice[i].Name%>
+                                </td>
+                                <td>
+                                    <%= dataHisDevice[i].Status%>
+                                </td>
+                                <td>
+                                    <%= dataHisDevice[i].User%>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </table>
+                </div>
+
+        </div>
+
+
+        <!-- Modal Cấp quyền admin-->
+        <%-include("authorityManager")%>
+            <!-- END Modal Cấp quyền admin-->
+
+            <!-- Modal add địa điểm-->
+            <%-include("addLocation")%>
+                <!-- END Modal add địa điểm-->
+
+                <!-- Start Footer -->
+                <%- include("footer")%>
+                    <!-- End Footer -->
+                    <%- include("end")%>

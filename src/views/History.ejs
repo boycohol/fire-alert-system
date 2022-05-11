@@ -1,0 +1,39 @@
+<%- include("include")%>
+    <%- include ("header")%>
+        <!-- End Navbar -->
+        <div class="content">
+            <%-include("navbar")%>
+
+                <div class="table">
+                    <div id="name" style="color: red; font-weight: bold !important;">Lịch sử nhiệt độ</div>
+                    <table id="infoTableTemp">
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>Nhiệt độ(độ C)</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="table">
+                    <div id="name" style="color: red; font-weight: bold !important;">Lịch sử khí Gas</div>
+                    <table id="infoTableGas">
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>Nồng độ khí Gas(ppm)</th>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+
+        <!-- Modal Cấp quyền admin-->
+        <%-include("authorityManager")%>
+            <!-- END Modal Cấp quyền admin-->
+
+            <!-- Modal add địa điểm-->
+            <%-include("addLocation")%>
+                <!-- END Modal add địa điểm-->
+
+                <!-- Start Footer -->
+                <%- include("footer")%>
+                    <!-- End Footer -->
+                    <%- include("end")%>
